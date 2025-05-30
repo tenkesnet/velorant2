@@ -1,0 +1,377 @@
+/* Alap body stílusok */
+body {
+  background-color: #0f0f10;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #1f1f21;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff4655 !important;
+}
+
+/* HERO szekció */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../images/hero.jpg') center center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  margin-left: 17%;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-family: "VALORANT", Consolas, 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+
+h2{
+  font-family: "VALORANT", Consolas, 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h5{
+  font-family: "VALORANT", Consolas, 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* MÁSODLAGOS HERO */
+.hero-secondary {
+  height: 50vh;
+  background: url('../images/season.avif') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-secondary .hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-secondary .text {
+  position: relative;
+  margin-left: 17%;
+  color: white;
+  z-index: 2;
+}
+
+.hero-secondary h1 {
+  font-family: "VALORANT", Consolas, 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.hero-secondary p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+/* SZEKCIÓK CÍMEI */
+.section-title {
+  font-size: 2.8rem;
+  border-left: 5px solid #ff4655;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  user-select: none;
+}
+
+/* ÚJDONSÁGOK kártyák */
+.card {
+  background-color: #1f1f21;
+  color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 18px rgba(255, 70, 85, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bundles-card {
+  background-color: #c1c1de;
+  color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 18px rgba(255, 70, 85, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(255, 70, 85, 0.45);
+}
+
+.card-img-top {
+  width: 100%;
+  padding: 1.5rem 1.5rem 0;
+  background: linear-gradient(135deg, #2b2b2d 0%, #18181a 100%);
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  box-shadow: inset 0 0 12px rgba(255, 70, 85, 0.25);
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.07);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(255, 70, 85, 0.3);
+}
+
+.card-body {
+  flex-grow: 1;
+  padding: 1.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  color: #ff4655;
+  text-shadow: 0 0 6px rgba(255, 70, 85, 0.6);
+}
+
+.card-text {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* GOMBOK */
+.btn-primary {
+  background-color: #ff4655;
+  border-radius: 50px;
+  font-weight: 700;
+  padding: 0.6rem 1.6rem;
+  box-shadow: 0 5px 15px rgba(255, 70, 85, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-self: center;
+  width: max-content;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e03c4f;
+  box-shadow: 0 8px 24px rgba(224, 60, 79, 0.6);
+}
+
+/* TARTALMI BLOKKOK háttérrel */
+.section-block {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  z-index: 1;
+}
+
+.section-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.8);
+  z-index: 0;
+}
+
+.section-block > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Kategóriák háttérképei */
+.bg-weapons {
+  background-image: url('../images/guns.png');
+  height: 80vh;
+}
+
+.bg-agents {
+  background-image: url('../images/agents.jpg');
+  height: 80vh;
+}
+
+.bg-maps {
+  background-image: url('../images/maps.jpg');
+  height: 80vh;
+}
+
+/* FOOTER */
+footer {
+  font-family: "VALORANT", Consolas, 'Courier New', monospace;
+  background: #181a1b;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.12);
+}
+
+footer .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+footer .row {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer img {
+  vertical-align: middle;
+}
+
+footer span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  color: #ff4655;
+}
+
+footer a {
+  color: #e94444;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .small {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Betűméret osztályok */
+.display-3 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.display-5 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.agenth1 {
+  font-family: "VALORANT", Consolas, 'Courier New', monospace;
+  text-align: center;
+  margin: 40px 0;
+  color: #ff4655;
+  text-shadow: 0 0 8px rgba(255, 70, 85, 0.7);
+}
+
+#agent-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.agent-icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 10px;
+  box-shadow: 0 4px 12px rgba(255, 70, 85, 0.6);
+}
+
+/* Reszponzív */
+@media (max-width: 767px) {
+  .section-title {
+    text-align: center;
+    border-left: none;
+    border-bottom: 3px solid #ff4655;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+
+  .hero-text,
+  .hero-secondary .text {
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    background-color: #1f1f21;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+  }
+
+  footer .row {
+    flex-direction: column;
+  }
+
+  footer .col-md-6 {
+    margin-bottom: 1rem;
+    text-align: center !important;
+  }
+}
