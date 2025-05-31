@@ -134,18 +134,7 @@ h5{
   height: 100%;
 }
 
-.bundles-card {
-  background-color: #c1c1de;
-  color: #fff;
-  border-radius: 1.25rem;
-  box-shadow: 0 6px 18px rgba(255, 70, 85, 0.15);
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+
 
 .card:hover {
   transform: translateY(-12px) scale(1.01);
